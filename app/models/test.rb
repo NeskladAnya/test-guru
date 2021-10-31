@@ -1,9 +1,10 @@
 class Test < ApplicationRecord
 
   def self.find_test(category)
-    name = Category.find_by(title: category)
-    Test.select(:title).where(category_id: name.id).order(title: :desc).map do |i|
-      i.title
-    end
+    Test
+    .joins('JOIN categories ON tests.category_id = categories.id')
+    .where(categories: {title: category})
+    .order(title: :desc)
+    .pluck('title')
   end
 end
