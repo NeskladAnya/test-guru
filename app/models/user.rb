@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   def find_test(level)
-    tests = Result.where(user_id: id).map { |i| i.test_id }
-    Test.where(level: level, id: tests)
+    Result.joins('JOIN tests ON results.test_id = tests.id')
+      .where(user_id: id, tests: { level: level })
+      .pluck('tests.title')
   end
 end
