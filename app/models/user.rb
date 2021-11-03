@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  has_many :results
+  has_many :tests, through: :results
+
   def find_test_by_level(level)
     Test
       .joins('JOIN results on tests.id = results.test_id')
