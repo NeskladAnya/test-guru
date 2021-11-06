@@ -1,3 +1,9 @@
+Category.destroy_all
+User.destroy_all
+Test.destroy_all
+Question.destroy_all
+Answer.destroy_all
+
 categories = Category.create!(
   [
     { title: "Programming" },
@@ -8,9 +14,9 @@ categories = Category.create!(
 
 users = User.create!(
   [
-    { name: "Peter" },
-    { name: "Karl" },
-    { name: "Mia" }
+    { name: "Peter", email: "peter@test.com" },
+    { name: "Karl", email: "karl_mood@gmail.com" },
+    { name: "Mia", email: "mama-mia@gmail.com" }
   ]
 )
 
