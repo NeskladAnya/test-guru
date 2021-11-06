@@ -16,48 +16,48 @@ users = User.create!(
 
 tests = Test.create!(
   [
-    { title: "Ruby on Rails", level: 1, category_id: categories[1].id, author_id: users[2].id },
-    { title: "School math", level: 2, category_id: categories[0].id, author_id: users[0].id },
-    { title: "Music", level: 0, category_id: categories[2].id, author_id: users[0].id },
-    { title: "Art", level: 5, category_id: categories[2].id, author_id: users[1].id },
-    { title: "HTML", level: 3, category_id: categories[1].id, author_id: users[1].id }
+    { title: "Ruby on Rails", level: 1, category: categories[1], author: users[2] },
+    { title: "School math", level: 2, category: categories[0], author: users[0] },
+    { title: "Music", level: 0, category: categories[2], author: users[0] },
+    { title: "Art", level: 5, category: categories[2], author: users[1] },
+    { title: "HTML", level: 3, category: categories[1], author: users[1] }
   ]
 )
 
 questions = Question.create!(
   [
-    { body: "What is your favourite subject?", test_id: tests[0].id },
-    { body: "2 + 2 = ?", test_id: tests[1].id },
-    { body: "Where was Claude Monet born?", test_id: tests[3].id },
-    { body: "What is <p>?", test_id: tests[4].id },
-    { body: "What is [1, 2, 3]?", test_id: tests[0].id },
-    { body: "What is Freddie Mercury's real name?", test_id: tests[2].id },
-    { body: "5**3 = ?", test_id: tests[1].id },
-    { body: "5 + 2 * 3 = ?", test_id: tests[1].id },
-    { body: "x equals to? x + 10 * 2 = 25", test_id: tests[1].id }
+    { body: "What is your favourite subject?", test: tests[0] },
+    { body: "2 + 2 = ?", test: tests[1] },
+    { body: "Where was Claude Monet born?", test: tests[3] },
+    { body: "What is <p>?", test: tests[4] },
+    { body: "What is [1, 2, 3]?", test: tests[0] },
+    { body: "What is Freddie Mercury's real name?", test: tests[2] },
+    { body: "5**3 = ?", test: tests[1] },
+    { body: "5 + 2 * 3 = ?", test: tests[1] },
+    { body: "x equals to? x + 10 * 2 = 25", test: tests[1] }
   ]
 )
 
 answers = Answer.create!(
   [
-    { body: "Math", correct: true, question_id: questions[0].id },
-    { body: "Music", correct: false, question_id: questions[0].id },
-    { body: "4", correct: true, question_id: questions[1].id },
-    { body: "5", correct: false, question_id: questions[1].id },
-    { body: "France", correct: true, question_id: questions[2].id },
-    { body: "Germany", correct: false, question_id: questions[2].id },
-    { body: "Paragraph tag", correct: true, question_id: questions[3].id },
-    { body: "Party", correct: false, question_id: questions[3].id },
-    { body: "Hash", correct: false, question_id: questions[4].id },
-    { body: "Array", correct: true, question_id: questions[4].id },
-    { body: "Farrokh Bulsara", correct: true, question_id: questions[5].id },
-    { body: "Freddie Mercury", correct: false, question_id: questions[5].id },
-    { body: "125", correct: true, question_id: questions[6].id },
-    { body: "225", correct: false, question_id: questions[6].id },
-    { body: "11", correct: true, question_id: questions[7].id },
-    { body: "21", correct: false, question_id: questions[7].id },
-    { body: "15", correct: false, question_id: questions[8].id },
-    { body: "5", correct: true, question_id: questions[8].id },
+    { body: "Math", correct: true, question: questions[0] },
+    { body: "Music", correct: false, question: questions[0] },
+    { body: "4", correct: true, question: questions[1] },
+    { body: "5", correct: false, question: questions[1] },
+    { body: "France", correct: true, question: questions[2] },
+    { body: "Germany", correct: false, question: questions[2] },
+    { body: "Paragraph tag", correct: true, question: questions[3] },
+    { body: "Party", correct: false, question: questions[3] },
+    { body: "Hash", correct: false, question: questions[4] },
+    { body: "Array", correct: true, question: questions[4] },
+    { body: "Farrokh Bulsara", correct: true, question: questions[5] },
+    { body: "Freddie Mercury", correct: false, question: questions[5] },
+    { body: "125", correct: true, question: questions[6] },
+    { body: "225", correct: false, question: questions[6] },
+    { body: "11", correct: true, question: questions[7] },
+    { body: "21", correct: false, question: questions[7] },
+    { body: "15", correct: false, question: questions[8] },
+    { body: "5", correct: true, question: questions[8] },
   ]
 )
 
