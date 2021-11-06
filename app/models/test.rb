@@ -10,10 +10,9 @@ class Test < ApplicationRecord
   scope :normal, -> { where(level: 2..4) }
   scope :hard, -> { where(level: 5..) }
 
-  def self.find_test_by_category(category)
+  scope :find_test_title_by_category, -> (category) {
     joins(:category)
     .where(categories: {title: category})
-    .order(title: :desc)
     .pluck('title')
-  end
+  }
 end
