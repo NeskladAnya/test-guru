@@ -1,7 +1,7 @@
-<h1>All Questions</h1>
+<h1>Test "<%= @test.title%>"</h1>
 
 <p>
-  <%= link_to 'New question', new_test_question_path %>
+  <%= link_to 'New question', new_test_question_path(@test) %>
 </p>
 
 <table>
