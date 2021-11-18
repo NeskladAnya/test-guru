@@ -12,6 +12,10 @@ class TestsController < ApplicationController
   def edit
   end
 
+  def new
+    @test = Test.new
+  end
+
   private
 
   def find_test
