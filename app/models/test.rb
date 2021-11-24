@@ -23,4 +23,10 @@ class Test < ApplicationRecord
   def self.find_test_title_by_category(category)
     find_test_by_category(category).pluck('title')
   end
+
+  def all_correct_answers
+    self.questions.map do |question|
+      question.answers.correct_answers.count
+    end
+  end
 end
