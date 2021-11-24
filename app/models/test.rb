@@ -24,9 +24,13 @@ class Test < ApplicationRecord
     find_test_by_category(category).pluck('title')
   end
 
-  def all_correct_answers
-    self.questions.map do |question|
-      question.answers.correct_answers.count
+  def correct_answers_num
+    count = 0
+    self.questions.each do |question|
+      question.answers.correct_answers.each do |answer|
+        count += 1
+      end
     end
+    return count
   end
 end

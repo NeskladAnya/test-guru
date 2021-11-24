@@ -4,7 +4,6 @@ class TestPassage < ApplicationRecord
   belongs_to :current_question, class_name: 'Question', optional: true
 
   before_validation :before_validation_set_first_question, on: :create
-  before_validation :before_validation_set_question_number, on: :create
 
   def completed?
     current_question.nil?
@@ -21,6 +20,10 @@ class TestPassage < ApplicationRecord
 
   def find_question_number
     test.questions.map.find_index(current_question) + 1
+  end
+  
+  def percentage_score
+    self.correct_questions * 100 / test.correct_answers_num
   end
 
   private
