@@ -5,6 +5,8 @@ class TestPassage < ApplicationRecord
 
   before_validation :set_current_question
 
+  SUCCESS_RATIO = 85
+
   def completed?
     current_question.nil?
   end
@@ -26,11 +28,7 @@ class TestPassage < ApplicationRecord
   end
 
   def success?
-    if percentage_score >= 85
-      true
-    else
-      false
-    end
+    percentage_score >= SUCCESS_RATIO
   end
 
   private
@@ -48,7 +46,9 @@ class TestPassage < ApplicationRecord
   end
 
   def correct_answer?(answer_ids)
-    correct_answers.ids.sort == answer_ids.map(&:to_i).sort
+    unless answer_ids.nil?
+      correct_answers.ids.sort == answer_ids.map(&:to_i).sort
+    end
   end
 
   def correct_answers
