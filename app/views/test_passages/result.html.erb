@@ -1,0 +1,12 @@
+<h1>'<%= @test_passage.test.title %>' Test Results</h1>
+<body>
+  <% if @test_passage.success? %>
+    <p style="color:green"><%= @test_passage.percentage_score %> процентов</p>
+    <p>Тест успешно пройден!</p>
+  <% else %>
+    <p style="color:red"><%= @test_passage.percentage_score %> процентов</p>
+    <p>Тест не пройден :( </p>
+  <% end %>
+</body>
+
+<%= link_to 'Back', tests_path %>
