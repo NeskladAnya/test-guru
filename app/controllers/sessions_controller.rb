@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to(cookies[:intended_url] || tests_path)
-      destination_path
+      redirect_to(destination_path)
+      cookies.delete(:intended_url) || tests_path
     else
       flash.now[:alert] = 'Please check your email and password'
       render :new
@@ -26,6 +26,6 @@ class SessionsController < ApplicationController
   private
 
   def destination_path
-    cookies.delete(:intended_url) || tests_path
+    cookies[:intended_url] || tests_path
   end
 end
