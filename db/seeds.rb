@@ -14,9 +14,9 @@ categories = Category.create!(
 
 users = User.create!(
   [
-    { name: "Peter", email: "peter@test.com" },
-    { name: "Karl", email: "karl_mood@gmail.com" },
-    { name: "Mia", email: "mama-mia@gmail.com" }
+    { first_name: "Peter", last_name: "Green", email: "peter@test.com", password: "123456", sign_in_count: 0, type: "User" },
+    { first_name: "Karl", last_name: "Pop", email: "karl_mood@gmail.com", password: "Qwerty", sign_in_count: 0, type: "User" },
+    { first_name: "Mia", last_name: "Way", email: "mama-mia@gmail.com", password: "TestPassword", sign_in_count: 0, type: "User" }
   ]
 )
 
