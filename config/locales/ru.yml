@@ -1,0 +1,32 @@
+ru:
+  admin:
+    tests:
+      index:
+        header: "Все тесты"
+        title: "Название"
+        question_count: "Количество вопросов"
+        actions: "Действия"
+        new_test_link: "Создать новый тест"
+        
+      show:
+        new_question: "Новый вопрос"
+        question_body: "Вопрос"
+        actions: "Действия"
+      test:
+        show_test_link: "Открыть"
+        edit_test_link: "Изменить"
+        delete_test_link: "Удалить"
+
+  helpers:
+    submit:
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+
+      question:
+        create: "Создать вопрос"
+        update: "Обновить вопрос"
+      
+      answer:
+        create: "Создать ответ"
+        update: "Обновить ответ"
