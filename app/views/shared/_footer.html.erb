@@ -1,8 +1,8 @@
 <footer>
   <p>
-    Year: <%= current_year %> ||
-    Author: Hanna ||
-    Github <%= github_url('NeskladAnya', 'test-guru') %> ||
-    <%= link_to 'Учебный проект в онлайн-школе Thinknetica', 'https://thinknetica.com/', target: "_blank" %>
+    <%= t('.year') %> <%= current_year %> ||
+    <%= t('.author') %> Hanna ||
+    <%= github_url('NeskladAnya', 'test-guru') %> ||
+    <%= link_to t('.project'), 'https://thinknetica.com/', target: "_blank" %>
   </p>
 </footer>

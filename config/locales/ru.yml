@@ -7,7 +7,6 @@ ru:
         question_count: "Количество вопросов"
         actions: "Действия"
         new_test_link: "Создать новый тест"
-        
       show:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
@@ -16,6 +15,19 @@ ru:
         show_test_link: "Открыть"
         edit_test_link: "Изменить"
         delete_test_link: "Удалить"
+
+  tests:
+    index:
+      header: "Все тесты"
+      title: "Название"
+      question_count: "Количество вопросов"
+      actions: "Действие"
+
+  shared:
+    footer:
+      year: "Год: "
+      author: "Автор: "
+      project: "Учебный проект в онлайн-школе Thinknetica"
 
   helpers:
     submit:
@@ -30,3 +42,4 @@ ru:
       answer:
         create: "Создать ответ"
         update: "Обновить ответ"
+
