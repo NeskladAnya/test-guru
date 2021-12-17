@@ -35,6 +35,8 @@ ru:
 
       user:
         email: "Email"
+        password: "Пароль"
+        remember_me: "Запомнить"
         first_name: "Имя"
         last_name: "Фамилия"
         type: "Роль"
