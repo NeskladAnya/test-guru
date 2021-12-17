@@ -1,13 +1,17 @@
 <nav class="navbar navbar-light bg-light">
-  <%= project_link %>
-
-  <span>
-    <% if user_signed_in? %>
-      Welcome, <%= current_user.first_name %>! ||
-      <%= link_to t('.log_out'), destroy_user_session_path, method: :delete %>
+  <div class="container-fluid">
+    <%= project_link %>
+    <div class="nav-item">
+      <% if user_signed_in? %>
+        <% if current_user.type == "Admin" %>
+          <%= link_to t('.admin'), admin_tests_path %>
+        <% end %>
+        <%= t('.welcome', first_name: current_user.first_name) %>! || 
+        <%= link_to t('.log_out'), destroy_user_session_path, method: :delete %>
+    </div>
     <% else %>
       <%= link_to t('.log_in'), new_user_session_path %> ||
       <%= link_to t('.sign_up'), new_user_registration_path %>
     <% end %>
-  </span>
+  </div>
 </nav>

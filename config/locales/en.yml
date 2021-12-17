@@ -35,6 +35,12 @@ en:
       year: "Year: "
       author: "Author: "
       project: "Class project for Thinknetica"
+    navigation:
+      log_in: "Log in"
+      log_out: "Log out"
+      sign_up: "Sign up"
+      admin: "Admin"
+      welcome: "Welcome, %{first_name}"
   
   helpers:
     submit:
