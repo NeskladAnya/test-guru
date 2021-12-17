@@ -1,4 +1,14 @@
 ru:
+  nav:
+    back: "Назад"
+    edit: "Изменить"
+    start: "Начать"
+
+  actions:
+    show: "Открыть"
+    edit: "Изменить"
+    delete: "Удалить"
+
   admin:
     tests:
       index:
@@ -8,13 +18,10 @@ ru:
         actions: "Действия"
         new_test_link: "Создать новый тест"
       show:
+        header: "Тест '%{title}'"
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
-      test:
-        show_test_link: "Открыть"
-        edit_test_link: "Изменить"
-        delete_test_link: "Удалить"
 
   tests:
     index:
@@ -42,4 +49,3 @@ ru:
       answer:
         create: "Создать ответ"
         update: "Обновить ответ"
-

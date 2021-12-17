@@ -1,4 +1,14 @@
 en:
+  nav:
+    back: "Back"
+    edit: "Edit"
+    start: "Start"
+
+  actions:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+
   admin:
     tests:
       index:
@@ -7,12 +17,25 @@ en:
         question_count: "Number of questions"
         actions: "Actions"
         new_test_link: "New test"
-        
-      test:
-        show_test_link: "Show"
-        edit_test_link: "Edit"
-        delete_test_link: "Delete"
+      show:
+        header: "Test '%{title}'"
+        new_question: "New question"
+        question_body: "Question"
+        actions: "Actions"
 
+  tests:
+    index:
+      header: "All tests"
+      title: "Title"
+      question_count: "Number of questions"
+      actions: "Action"
+    
+  shared:
+    footer:
+      year: "Year: "
+      author: "Author: "
+      project: "Class project for Thinknetica"
+  
   helpers:
     submit:
       test:
