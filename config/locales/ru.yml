@@ -1,0 +1,53 @@
+ru:
+  nav:
+    back: "Назад"
+    edit: "Изменить"
+    start: "Начать"
+
+  actions:
+    show: "Открыть"
+    edit: "Изменить"
+    delete: "Удалить"
+
+  admin:
+    tests:
+      index:
+        header: "Все тесты"
+        title: "Название"
+        question_count: "Количество вопросов"
+        actions: "Действия"
+        new_test_link: "Создать новый тест"
+      show:
+        header: "Тест '%{title}'"
+        new_question: "Новый вопрос"
+        question_body: "Вопрос"
+        actions: "Действия"
+
+  tests:
+    index:
+      header: "Все тесты"
+      title: "Название"
+      question_count: "Количество вопросов"
+      actions: "Действие"
+
+  shared:
+    footer:
+      year: "Год: "
+      author: "Автор: "
+      project: "Учебный проект в онлайн-школе Thinknetica"
+
+  helpers:
+    submit:
+      test:
+        create: "Создать тест"
+        update: "Обновить тест"
+
+      question:
+        create: "Создать вопрос"
+        update: "Обновить вопрос"
+      
+      answer:
+        create: "Создать ответ"
+        update: "Обновить ответ"
+    select:
+      prompt: "Выбирай!"
