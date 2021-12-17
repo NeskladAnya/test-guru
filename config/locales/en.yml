@@ -49,3 +49,5 @@ en:
       answer:
         create: "Create answer"
         update: "Update answer"
+    select:
+      prompt: "Select!"
