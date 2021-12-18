@@ -35,6 +35,12 @@ ru:
       year: "Год: "
       author: "Автор: "
       project: "Учебный проект в онлайн-школе Thinknetica"
+    navigation:
+      log_in: "Вход"
+      log_out: "Выход"
+      sign_up: "Регистрация"
+      admin: "Админ"
+      welcome: "Привет, %{first_name}"
 
   helpers:
     submit:
