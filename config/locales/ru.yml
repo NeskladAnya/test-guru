@@ -57,3 +57,7 @@ ru:
         update: "Обновить ответ"
     select:
       prompt: "Выбирай!"
+
+  services:
+    gist:
+      title: "Вопрос из теста %{title}"
