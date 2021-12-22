@@ -1,0 +1,7 @@
+<tbody>
+  <tr>
+    <td><a href="<%= admin_question_path(gist.question) %>" class="link-primary"><%= gist_question_truncate(gist)%></a></td>
+    <td><a href="<%= gist.url %>" class="link-primary"><%= gist_hash(gist) %></a></td>
+    <td><%= gist.author.email%>
+  </tr>
+</tbody>

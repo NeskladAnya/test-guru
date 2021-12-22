@@ -22,6 +22,12 @@ en:
         new_question: "New question"
         question_body: "Question"
         actions: "Actions"
+    gists:
+      index:
+        header: "All Gists"
+        question: "Question"
+        url: "URL"
+        author: "Author"
 
   tests:
     index:

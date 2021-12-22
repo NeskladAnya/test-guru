@@ -22,6 +22,12 @@ ru:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
+    gists:
+      index:
+        header: "Все Gists"
+        question: "Вопрос"
+        url: "URL"
+        author: "Автор"
 
   tests:
     index:
