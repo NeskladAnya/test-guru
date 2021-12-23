@@ -4,7 +4,7 @@ class GistsController < ApplicationController
   def create
     result = GistQuestionService.new(@test_passage.current_question).call
 
-    unless result.nil?
+    if result.success?
       Gist.create!(question: @test_passage.current_question, url: result.url, author: current_user)
       redirect_to @test_passage, notice: "Here is the link to your Gist #{result.url}"
     end
