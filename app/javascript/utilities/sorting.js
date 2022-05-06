@@ -24,9 +24,8 @@ function sortRowsByTitle() {
     this.querySelector('.octicon-arrow-up').classList.add('hide')
   }
 
-  var sortedTable = document.createElement('table')
-
   // Create a table in the memory
+  var sortedTable = document.createElement('table')
   sortedTable.classList.add('table')
 
   // Add header to the created in the memory table
