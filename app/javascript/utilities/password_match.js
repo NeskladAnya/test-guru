@@ -1,24 +1,25 @@
 document.addEventListener('turbolinks:load', function() {
+  let control = document.querySelector('.new_user')
+  control.addEventListener('click', checkPasswordFields)
 
-  this.addEventListener('click', checkPasswordFields)
+  let password_field = document.getElementById('user_password')
+  let password_confirmation_field = document.getElementById('user_password_confirmation')
 
-})
+  let password = document.querySelector('.password')
 
-function checkPasswordFields() {
-  var password = document.getElementById('user_password').value
-  var password_confirmation = document.getElementById('user_password_confirmation').value
+  function checkPasswordFields() {
+    if (password_field.value && password_confirmation_field.value) {
+      password.classList.remove('hide')
 
-  if (password && password_confirmation) {
-    this.querySelector('.octicon-alert').classList.remove('hide')
-
-    if (password == password_confirmation) {
-      this.querySelector('.octicon-alert').classList.add('text-success')
-      this.querySelector('.octicon-alert').classList.remove('text-danger')
+      if (password_field.value == password_confirmation_field.value) {
+        password.classList.add('text-success')
+        password.classList.remove('text-danger')
+      } else {
+        password.classList.add('text-danger')
+        password.classList.remove('text-success')
+      }
     } else {
-      this.querySelector('.octicon-alert').classList.add('text-danger')
-      this.querySelector('.octicon-alert').classList.remove('text-success')
+      password.classList.add('hide')
     }
-  } else {
-    this.querySelector('.octicon-alert').classList.add('hide')
-  } 
-}
+  }
+})
