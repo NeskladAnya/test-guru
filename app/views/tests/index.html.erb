@@ -1,10 +1,14 @@
 <div class="row">
   <h1><%= t('.header')%></h1>
 
-  <table>
+  <table class="table">
     <thead>
       <tr>
-        <th class="col"><%= t('.title') %></th>
+        <th class="col sort-by-title pointer">
+          <%= t('.title') %>
+          <%= octicon 'arrow-up', class: 'text-success hide' %>
+          <%= octicon 'arrow-down', class: 'text-success hide' %>
+        </th>
         <th class="col"><%= t('.question_count')%></th>
         <th class="col"><%= t('.actions')%></th>
       </tr>
