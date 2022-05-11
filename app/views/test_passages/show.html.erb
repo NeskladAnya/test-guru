@@ -1,7 +1,13 @@
 <h1>Pass '<%= @test_passage.test.title %>' Test</h1>
 
-<p>Количество вопросов: <%= @test_passage.test.questions.count%></p>
+<p>Количество вопросов: <%= @test_passage.test.questions.count %></p>
 <p>Номер текущего вопроса: <%=@test_passage.current_question_number %></p>
+
+<%= content_tag :div, class: "progress",
+                      data: { question_number: @test_passage.current_question_number,
+                              question_count: @test_passage.test.questions.count } do %>
+  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<% end %>
 
 <b><%= @test_passage.current_question.body %></b>
 
@@ -20,5 +26,3 @@
   <p><%= link_to 'Gist Question', test_passage_gists_path(@test_passage), method: :post %></p>
   <p><%= form.submit 'Next' %></p>
 <% end %>
-
-<% console %>
