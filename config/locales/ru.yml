@@ -8,6 +8,7 @@ ru:
     show: "Открыть"
     edit: "Изменить"
     delete: "Удалить"
+    cancel: "Отменить"
 
   admin:
     tests:
@@ -22,6 +23,8 @@ ru:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
+      form_inline:
+        submit: "ОК"
     gists:
       index:
         header: "Все Gists"
