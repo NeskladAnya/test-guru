@@ -8,6 +8,7 @@ en:
     show: "Show"
     edit: "Edit"
     delete: "Delete"
+    cancel: "Cancel"
 
   admin:
     tests:
@@ -22,6 +23,8 @@ en:
         new_question: "New question"
         question_body: "Question"
         actions: "Actions"
+      form_inline:
+        submit: "OK"
     gists:
       index:
         header: "All Gists"

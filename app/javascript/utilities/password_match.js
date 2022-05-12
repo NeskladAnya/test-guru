@@ -1,6 +1,6 @@
 document.addEventListener('turbolinks:load', function() {
   let control = document.querySelector('.new_user')
-  control.addEventListener('click', checkPasswordFields)
+  if (control) { control.addEventListener('click', checkPasswordFields) }
 
   let password_field = document.getElementById('user_password')
   let password_confirmation_field = document.getElementById('user_password_confirmation')
