@@ -3,6 +3,7 @@ ru:
     back: "Назад"
     edit: "Изменить"
     start: "Начать"
+    home: "Домой"
 
   actions:
     show: "Открыть"
@@ -44,6 +45,7 @@ ru:
       year: "Год: "
       author: "Автор: "
       project: "Учебный проект в онлайн-школе Thinknetica"
+      feedback: "Свяжитесь с нами"
     navigation:
       log_in: "Вход"
       log_out: "Выход"

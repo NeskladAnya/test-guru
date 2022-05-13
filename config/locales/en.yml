@@ -3,6 +3,7 @@ en:
     back: "Back"
     edit: "Edit"
     start: "Start"
+    home: "Home"
 
   actions:
     show: "Show"
@@ -44,6 +45,7 @@ en:
       year: "Year: "
       author: "Author: "
       project: "Class project for Thinknetica"
+      feedback: "Contact us"
     navigation:
       log_in: "Log in"
       log_out: "Log out"
