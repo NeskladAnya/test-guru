@@ -12,14 +12,6 @@ categories = Category.create!(
   ]
 )
 
-users = User.create!(
-  [
-    { first_name: "Peter", last_name: "Green", email: "peter@test.com", password: "123456", sign_in_count: 0, type: "User" },
-    { first_name: "Karl", last_name: "Pop", email: "karl_mood@gmail.com", password: "Qwerty", sign_in_count: 0, type: "User" },
-    { first_name: "Mia", last_name: "Way", email: "mama-mia@gmail.com", password: "TestPassword", sign_in_count: 0, type: "User" }
-  ]
-)
-
 tests = Test.create!(
   [
     { title: "Ruby on Rails", level: 1, category: categories[1], author: users[2] },
