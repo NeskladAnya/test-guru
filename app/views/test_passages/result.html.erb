@@ -1,12 +1,12 @@
-<h1>'<%= @test_passage.test.title %>' Test Results</h1>
+<h1><%= t('.header', title: @test_passage.test.title) %></h1>
 <body>
   <% if @test_passage.success? %>
-    <p style="color:green"><%= @test_passage.percentage_score %> процентов</p>
-    <p>Тест успешно пройден!</p>
+    <p style="color:green"><%= t('.result', percent: @test_passage.percentage_score) %></p>
+    <p><%= t('.success') %></p>
   <% else %>
-    <p style="color:red"><%= @test_passage.percentage_score %> процентов</p>
-    <p>Тест не пройден :( </p>
+    <p style="color:red"><%= t('.result', percent: @test_passage.percentage_score) %></p>
+    <p><%= t('.failure') %></p>
   <% end %>
 </body>
 
-<%= link_to 'Back', tests_path %>
+<%= link_to t('nav.back'), tests_path %>

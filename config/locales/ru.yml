@@ -10,6 +10,8 @@ ru:
     edit: "Изменить"
     delete: "Удалить"
     cancel: "Отменить"
+    next: "Дальше"
+    confirm: "Вы уверены?"
 
   admin:
     tests:
@@ -24,8 +26,20 @@ ru:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
+      edit:
+        header: "Редактировать тест '%{test}'"
       form_inline:
         submit: "ОК"
+    questions:
+      show:
+        header: "Вопрос"
+        answers: "Ответы"
+        new_answer: "Добавить ответ"
+    answers:
+      show:
+        header: "Вопрос"
+        answer: "Ответ:"
+        correct: "Правильный:"
     gists:
       index:
         header: "Все Gists"
@@ -39,6 +53,21 @@ ru:
       title: "Название"
       question_count: "Количество вопросов"
       actions: "Действие"
+  
+  test_passages:
+    show:
+      header: "Прохождение теста '%{title}'"
+      question_number: "%{current_number} вопрос из %{number}"
+      gist_link: "Добавить вопрос в Gist"
+    result:
+      header: "Результаты теста '%{title}'"
+      result: "Набрано: %{percent}%"
+      success: "Тест успешно пройден!"
+      failure: "Тест не пройден :("
+
+  feedbacks:
+    index:
+      header: "Привет, %{name}!"
 
   shared:
     footer:
@@ -71,4 +100,4 @@ ru:
 
   services:
     gist:
-      title: "Вопрос из теста %{title}"
+      title: "Вопрос из теста '%{title}'"

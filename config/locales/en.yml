@@ -10,6 +10,8 @@ en:
     edit: "Edit"
     delete: "Delete"
     cancel: "Cancel"
+    next: "Next"
+    confirm: "Are you sure?"
 
   admin:
     tests:
@@ -24,8 +26,20 @@ en:
         new_question: "New question"
         question_body: "Question"
         actions: "Actions"
+      edit:
+        header: "Edit '%{test}'"
       form_inline:
         submit: "OK"
+    questions:
+      show:
+        header: "Question"
+        answers: "Answers"
+        new_answer: "New answer"
+    answers:
+      show:
+        header: "Question"
+        answer: "Answer:"
+        correct: "Correct:"
     gists:
       index:
         header: "All Gists"
@@ -39,6 +53,21 @@ en:
       title: "Title"
       question_count: "Number of questions"
       actions: "Action"
+
+  test_passages:
+    show:
+      header: "Test '%{title}'"
+      question_number: "%{current_number} question out of %{number}"
+      gist_link: "Add question to Gist"
+    result:
+      header: "Results of '%{title}'"
+      result: "Result: %{percent} per cent"
+      success: "The test is successfully passed!"
+      failure: "The test is not passed :("
+
+  feedbacks:
+    index:
+      header: "Hello, %{name}!"
     
   shared:
     footer:
@@ -68,3 +97,7 @@ en:
         update: "Update answer"
     select:
       prompt: "Select!"
+
+  services:
+    gist:
+      title: "A question from '%{title}'"
