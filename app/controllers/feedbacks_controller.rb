@@ -11,7 +11,7 @@ class FeedbacksController < ApplicationController
     else
       Admin.all.each { |admin| FeedbacksMailer.send_feedback(admin, @feedback, @user_email).deliver_now }
 
-      redirect_to root_path, notice: "Thank you for the feedback!"
+      redirect_to authenticated_root_path, notice: "Thank you for the feedback!"
     end
   end
 end
