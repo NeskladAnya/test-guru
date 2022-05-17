@@ -27,13 +27,23 @@ function sortRowsByTitle() {
   // Create a table in the memory
   var sortedTable = document.createElement('table')
   sortedTable.classList.add('table')
+  sortedTable.classList.add('table-hover')
+  sortedTable.classList.add('table-bordered')
+
+  // Create table elements in the memory
+  let head = document.createElement('thead')
+  let body = document.createElement('tbody')
+
+  // Add table elements to the created in the memory table
+  sortedTable.appendChild(head)
+  sortedTable.appendChild(body)
 
   // Add header to the created in the memory table
-  sortedTable.appendChild(rows[0])
+  head.appendChild(rows[0])
 
   // Add already sorted rows to the table in the memory
   for (i = 0; i < sortedRows.length; i++) {
-    sortedTable.appendChild(sortedRows[i])
+    body.appendChild(sortedRows[i])
   }
 
   // Replace the existing table with the one in the memory
