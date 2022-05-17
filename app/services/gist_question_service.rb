@@ -5,7 +5,7 @@ class GistQuestionService
     end
 
     def url
-      hash.url
+      hash.html_url
     end
   end
 

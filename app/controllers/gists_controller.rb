@@ -6,7 +6,8 @@ class GistsController < ApplicationController
 
     if result.success?
       Gist.create!(question: @test_passage.current_question, url: result.url, author: current_user)
-      redirect_to @test_passage, notice: t('.notice', result: result.url)
+
+      redirect_to @test_passage, notice: view_context.link_to(t('.notice'), result.url, target: '_blank').html_safe
     end
   end
 

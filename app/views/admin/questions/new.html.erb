@@ -1,5 +1,5 @@
-<h1><%= question_header(@question) %></h1>
+<h1><%= t('.header', test: @question.test.title) %></h1>
 
 <%= render 'form' %>
 
-<%= link_to t('nav.back'), admin_test_path(@question_test) %>
+<%= link_to t('nav.back'), admin_test_path(@question.test) %>

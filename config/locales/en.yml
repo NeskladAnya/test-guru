@@ -26,6 +26,8 @@ en:
         new_question: "New question"
         question_body: "Question"
         actions: "Actions"
+      new:
+        header: "Create a new test"
       edit:
         header: "Edit '%{test}'"
       form_inline:
@@ -35,11 +37,15 @@ en:
         header: "Question"
         answers: "Answers"
         new_answer: "New answer"
+      new:
+        header: "Create a new question to '%{test}'"
     answers:
       show:
         header: "Question"
         answer: "Answer:"
         correct: "Correct:"
+      new:
+        header: "Add a new answer"
     gists:
       index:
         header: "All Gists"
@@ -67,7 +73,7 @@ en:
 
   gists:
     create:
-      notice: "Here is the link to your Gist %{result}"
+      notice: "View the created Gist"
 
   sessions:
     create:

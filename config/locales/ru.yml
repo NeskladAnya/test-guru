@@ -26,6 +26,8 @@ ru:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
+      new:
+        header: "Создать новый тест"
       edit:
         header: "Редактировать тест '%{test}'"
       form_inline:
@@ -35,11 +37,15 @@ ru:
         header: "Вопрос"
         answers: "Ответы"
         new_answer: "Добавить ответ"
+      new:
+        header: "Создать новый вопрос к тесту '%{test}'"
     answers:
       show:
         header: "Вопрос"
         answer: "Ответ:"
         correct: "Правильный:"
+      new:
+        header: "Добавить новый ответ"
     gists:
       index:
         header: "Все Gists"
@@ -67,7 +73,8 @@ ru:
 
   gists:
     create:
-      notice: "Ссылка на созданный Gist: %{result}"
+      notice: "Просмотреть созданный Gist"
+      
   
   sessions:
     create:

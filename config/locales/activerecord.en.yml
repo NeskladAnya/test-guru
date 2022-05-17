@@ -12,6 +12,7 @@ en:
         title: "Title"
         level: "Level"
         category_id: "Category"
+        category: "Category"
         created_at: "Creation date"
         updated_at: "Update date"
     

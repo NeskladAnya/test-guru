@@ -1,4 +1,5 @@
 <%= form_with model: [:admin, @test, @question], local: true do |form| %>
+  <%= render 'devise/shared/error_messages', resource: @question %>
   <p>
     <%= form.label :body %><br>
     <%= form.text_field :body %>
