@@ -65,9 +65,20 @@ ru:
       success: "Тест успешно пройден!"
       failure: "Тест не пройден :("
 
+  gists:
+    create:
+      notice: "Ссылка на созданный Gist: %{result}"
+  
+  sessions:
+    create:
+      notice: "Привет, %{name}!"
+
   feedbacks:
     index:
       header: "Привет, %{name}!"
+    create:
+      alert: "Пожалуйста, оставьте сообщение"
+      notice: "Спасибо за отзыв!"
 
   shared:
     footer:
@@ -95,6 +106,9 @@ ru:
       answer:
         create: "Создать ответ"
         update: "Обновить ответ"
+
+      session:
+        create: "Зарегистироваться"
     select:
       prompt: "Выбирай!"
 

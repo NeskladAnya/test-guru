@@ -36,6 +36,7 @@ ru:
       user:
         email: "Email"
         password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
         remember_me: "Запомнить"
         first_name: "Имя"
         last_name: "Фамилия"

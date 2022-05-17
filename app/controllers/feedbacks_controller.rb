@@ -7,11 +7,11 @@ class FeedbacksController < ApplicationController
     @user_email = params[:email]
 
     if @feedback.empty?
-      redirect_to feedbacks_path, alert: "Please leave the feedback"
+      redirect_to feedbacks_path, alert: t('.alert')
     else
       Admin.all.each { |admin| FeedbacksMailer.send_feedback(admin, @feedback, @user_email).deliver_now }
 
-      redirect_to authenticated_root_path, notice: "Thank you for the feedback!"
+      redirect_to authenticated_root_path, notice: t('.notice')
     end
   end
 end

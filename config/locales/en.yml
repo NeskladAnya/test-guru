@@ -65,9 +65,20 @@ en:
       success: "The test is successfully passed!"
       failure: "The test is not passed :("
 
+  gists:
+    create:
+      notice: "Here is the link to your Gist %{result}"
+
+  sessions:
+    create:
+      notice: "Hello, %{name}!"
+    
   feedbacks:
     index:
       header: "Hello, %{name}!"
+    create:
+      alert: "Please leave the feedback"
+      notice: "Thank you for the feedback!"
     
   shared:
     footer:
