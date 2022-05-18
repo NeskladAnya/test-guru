@@ -52,6 +52,20 @@ en:
         question: "Question"
         url: "URL"
         author: "Author"
+    badges:
+      index:
+        header: "All badges"
+        id: "ID"
+        name: "Name"
+        description: "Description"
+        key: "Key"
+        image: "Image"
+        actions: "Actions"
+        new_badge_link: "Create a new badge"
+      edit:
+        header: "Edit the badge"
+      new:
+        header: "Create a new badge"
 
   tests:
     index:
@@ -98,6 +112,7 @@ en:
       sign_up: "Sign up"
       admin: "Admin"
       welcome: "Welcome, %{first_name}"
+      badges: "Bages"
   
   helpers:
     submit:

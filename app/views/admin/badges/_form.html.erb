@@ -1,0 +1,34 @@
+<%= form_with model: [:admin, @badge],
+              class: 'form',
+              local: true do |form| %>
+  <%= render 'devise/shared/error_messages', resource: @badge %>
+
+  <p>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </p>
+
+  <p>
+    <%= form.label :key %>
+    <%= form.text_field :key %>
+  </p>
+
+  <p>
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url %>
+  </p>
+
+  <p>
+    <% if @badge.image_url != nil %> 
+      <%= image_tag(@badge.image_url, size: "100x100") %>
+    <% end %>
+  </p>
+
+  <%= form.submit %>
+
+<% end %>

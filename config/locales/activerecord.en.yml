@@ -44,3 +44,9 @@ en:
         type: "Type"
         created_at: "Creation date"
         updated_at: "Update date"
+
+      badge:
+        name: "Name"
+        description: "Description"
+        key: "Key"
+        image_url: "Image URL"

@@ -6,6 +6,7 @@ ru:
       question: "Вопрос"
       answer: "Ответ"
       user: "Пользователь"
+      badge: "Бейдж"
 
     attributes:
       test:
@@ -44,3 +45,9 @@ ru:
         type: "Роль"
         created_at: "Дата создания"
         updated_at: "Дата редактирования"
+
+      badge:
+        name: "Название"
+        description: "Описание"
+        key: "Ключ"
+        image_url: "URL изображения"

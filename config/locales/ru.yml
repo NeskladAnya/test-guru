@@ -52,6 +52,20 @@ ru:
         question: "Вопрос"
         url: "URL"
         author: "Автор"
+    badges:
+      index:
+        header: "Все бейджи"
+        id: "ID"
+        name: "Название"
+        description: "Описание"
+        key: "Ключ"
+        image: "Изображение"
+        actions: "Действия"
+        new_badge_link: "Создать новый бейдж"
+      edit:
+        header: "Редактировать бейдж"
+      new:
+        header: "Создать бейдж"
 
   tests:
     index:
@@ -75,7 +89,6 @@ ru:
     create:
       notice: "Просмотреть созданный Gist"
       
-  
   sessions:
     create:
       notice: "Привет, %{name}!"
@@ -99,6 +112,7 @@ ru:
       sign_up: "Регистрация"
       admin: "Админ"
       welcome: "Привет, %{first_name}"
+      badges: "Бейджи"
 
   helpers:
     submit:
