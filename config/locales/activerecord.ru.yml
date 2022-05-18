@@ -12,6 +12,7 @@ ru:
         title: "Название"
         level: "Уровень"
         category_id: "Категория"
+        category: "Категория"
         created_at: "Дата создания"
         updated_at: "Дата редактирования"
       
@@ -36,6 +37,7 @@ ru:
       user:
         email: "Email"
         password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
         remember_me: "Запомнить"
         first_name: "Имя"
         last_name: "Фамилия"

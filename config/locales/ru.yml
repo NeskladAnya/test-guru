@@ -3,12 +3,15 @@ ru:
     back: "Назад"
     edit: "Изменить"
     start: "Начать"
+    home: "Домой"
 
   actions:
     show: "Открыть"
     edit: "Изменить"
     delete: "Удалить"
     cancel: "Отменить"
+    next: "Дальше"
+    confirm: "Вы уверены?"
 
   admin:
     tests:
@@ -23,8 +26,26 @@ ru:
         new_question: "Новый вопрос"
         question_body: "Вопрос"
         actions: "Действия"
+      new:
+        header: "Создать новый тест"
+      edit:
+        header: "Редактировать тест '%{test}'"
       form_inline:
         submit: "ОК"
+    questions:
+      show:
+        header: "Вопрос"
+        answers: "Ответы"
+        new_answer: "Добавить ответ"
+      new:
+        header: "Создать новый вопрос к тесту '%{test}'"
+    answers:
+      show:
+        header: "Вопрос"
+        answer: "Ответ:"
+        correct: "Правильный:"
+      new:
+        header: "Добавить новый ответ"
     gists:
       index:
         header: "Все Gists"
@@ -38,12 +59,40 @@ ru:
       title: "Название"
       question_count: "Количество вопросов"
       actions: "Действие"
+  
+  test_passages:
+    show:
+      header: "Прохождение теста '%{title}'"
+      question_number: "%{current_number} вопрос из %{number}"
+      gist_link: "Добавить вопрос в Gist"
+    result:
+      header: "Результаты теста '%{title}'"
+      result: "Набрано: %{percent}%"
+      success: "Тест успешно пройден!"
+      failure: "Тест не пройден :("
+
+  gists:
+    create:
+      notice: "Просмотреть созданный Gist"
+      
+  
+  sessions:
+    create:
+      notice: "Привет, %{name}!"
+
+  feedbacks:
+    index:
+      header: "Привет, %{name}!"
+    create:
+      alert: "Пожалуйста, оставьте сообщение"
+      notice: "Спасибо за отзыв!"
 
   shared:
     footer:
       year: "Год: "
       author: "Автор: "
       project: "Учебный проект в онлайн-школе Thinknetica"
+      feedback: "Свяжитесь с нами"
     navigation:
       log_in: "Вход"
       log_out: "Выход"
@@ -64,9 +113,12 @@ ru:
       answer:
         create: "Создать ответ"
         update: "Обновить ответ"
+
+      session:
+        create: "Зарегистироваться"
     select:
       prompt: "Выбирай!"
 
   services:
     gist:
-      title: "Вопрос из теста %{title}"
+      title: "Вопрос из теста '%{title}'"

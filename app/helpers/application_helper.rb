@@ -8,7 +8,15 @@ module ApplicationHelper
   end
 
   def project_link
-    link_to "Test Guru", root_path, class: "navbar-brand"
+    if user_signed_in?
+      if current_user.type == "Admin"
+        link_to "Test Guru Admin", admin_tests_path, class: "navbar-brand"
+      else
+        link_to "Test Guru", authenticated_root_path, class: "navbar-brand"
+      end
+    else
+      link_to "Test Guru", unauthenticated_root_path, class: "navbar-brand"
+    end
   end
 
   def flash_class(key)

@@ -1,0 +1,17 @@
+<h1><%= t('.header', name: current_user.first_name) %></h1>
+
+<%= form_with do |form| %>
+  <p>
+    <%= form.label :email %>
+    <%= form.email_field :email, value: current_user.email %>
+  </p>
+
+  <p>
+    <%= form.label :feedback %>
+    <%= form.text_area :feedback, class: "form-control", rows: "3" %>
+  </p>
+
+  <p><%= form.submit %></p><br>
+<% end %>
+
+<%= link_to t('nav.home'), authenticated_root_path%>

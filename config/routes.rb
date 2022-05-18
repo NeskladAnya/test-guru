@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
 
-  root 'tests#index'
-
   devise_for :users, path_names: { sign_in: :login, sign_out: :logout, sign_up: :signup }, controllers: {sessions: "sessions"}
 
+  authenticated :user do
+    root 'tests#index', as: :authenticated_root
+  end
+
+  unauthenticated :user do
+    devise_scope :user do
+      root 'sessions#new', as: :unauthenticated_root
+    end
+  end
+  
   resources :tests, only: :index do
     post :start, on: :member
   end
@@ -25,4 +33,7 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  resources :feedbacks, only: %i[ index create ]
+
 end

@@ -3,12 +3,15 @@ en:
     back: "Back"
     edit: "Edit"
     start: "Start"
+    home: "Home"
 
   actions:
     show: "Show"
     edit: "Edit"
     delete: "Delete"
     cancel: "Cancel"
+    next: "Next"
+    confirm: "Are you sure?"
 
   admin:
     tests:
@@ -23,8 +26,26 @@ en:
         new_question: "New question"
         question_body: "Question"
         actions: "Actions"
+      new:
+        header: "Create a new test"
+      edit:
+        header: "Edit '%{test}'"
       form_inline:
         submit: "OK"
+    questions:
+      show:
+        header: "Question"
+        answers: "Answers"
+        new_answer: "New answer"
+      new:
+        header: "Create a new question to '%{test}'"
+    answers:
+      show:
+        header: "Question"
+        answer: "Answer:"
+        correct: "Correct:"
+      new:
+        header: "Add a new answer"
     gists:
       index:
         header: "All Gists"
@@ -38,12 +59,39 @@ en:
       title: "Title"
       question_count: "Number of questions"
       actions: "Action"
+
+  test_passages:
+    show:
+      header: "Test '%{title}'"
+      question_number: "%{current_number} question out of %{number}"
+      gist_link: "Add question to Gist"
+    result:
+      header: "Results of '%{title}'"
+      result: "Result: %{percent} per cent"
+      success: "The test is successfully passed!"
+      failure: "The test is not passed :("
+
+  gists:
+    create:
+      notice: "View the created Gist"
+
+  sessions:
+    create:
+      notice: "Hello, %{name}!"
+    
+  feedbacks:
+    index:
+      header: "Hello, %{name}!"
+    create:
+      alert: "Please leave the feedback"
+      notice: "Thank you for the feedback!"
     
   shared:
     footer:
       year: "Year: "
       author: "Author: "
       project: "Class project for Thinknetica"
+      feedback: "Contact us"
     navigation:
       log_in: "Log in"
       log_out: "Log out"
@@ -66,3 +114,7 @@ en:
         update: "Update answer"
     select:
       prompt: "Select!"
+
+  services:
+    gist:
+      title: "A question from '%{title}'"
