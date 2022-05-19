@@ -99,6 +99,14 @@ en:
     create:
       alert: "Please leave the feedback"
       notice: "Thank you for the feedback!"
+
+  badges:
+    index:
+      header: "All badges"
+      name: "Name"
+      description: "Description"
+      image: "Image"
+      achieved: "Achieved"
     
   shared:
     footer:
@@ -113,6 +121,7 @@ en:
       admin: "Admin"
       welcome: "Welcome, %{first_name}"
       badges: "Bages"
+      tests: "Tests"
   
   helpers:
     submit:

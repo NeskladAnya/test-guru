@@ -23,6 +23,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :badges, only: :index
+
   namespace :admin do
     resources :gists, only: :index
     resources :badges, except: :show

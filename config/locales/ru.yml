@@ -100,6 +100,14 @@ ru:
       alert: "Пожалуйста, оставьте сообщение"
       notice: "Спасибо за отзыв!"
 
+  badges:
+    index:
+      header: "Все бейджи"
+      name: "Название"
+      description: "Описание"
+      image: "Изображение"
+      achieved: "Получен"
+
   shared:
     footer:
       year: "Год: "
@@ -113,6 +121,7 @@ ru:
       admin: "Админ"
       welcome: "Привет, %{first_name}"
       badges: "Бейджи"
+      tests: "Тесты"
 
   helpers:
     submit:
