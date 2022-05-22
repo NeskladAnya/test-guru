@@ -19,6 +19,8 @@ en:
         header: "All tests"
         title: "Title"
         question_count: "Number of questions"
+        category: "Category"
+        level: "Level"
         actions: "Actions"
         new_test_link: "New test"
       show:

@@ -19,6 +19,8 @@ ru:
         header: "Все тесты"
         title: "Название"
         question_count: "Количество вопросов"
+        category: "Категория"
+        level: "Уровень"
         actions: "Действия"
         new_test_link: "Создать новый тест"
       show:
