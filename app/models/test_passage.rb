@@ -31,6 +31,12 @@ class TestPassage < ApplicationRecord
     percentage_score >= SUCCESS_RATIO
   end
 
+  def save_result
+    self.success? ? self.passed = true : self.passed = false
+
+    save!
+  end
+
   private
 
   def set_current_question

@@ -48,5 +48,6 @@ en:
       badge:
         name: "Name"
         description: "Description"
-        key: "Key"
+        rule_type: "Rule"
+        rule_value: "Rule value"
         image_url: "Image URL"

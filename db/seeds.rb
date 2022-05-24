@@ -1,9 +1,10 @@
-Category.destroy_all
-User.destroy_all
-Test.destroy_all
-Question.destroy_all
-Answer.destroy_all
-Badge.destroy_all
+DatabaseCleaner.clean_with(:truncation)
+
+users = User.create!(
+  [
+    { email: "hanna.belko.work@gmail.com", first_name: "Hanna", last_name: "Belko", password: "123456" }
+  ]
+)
 
 categories = Category.create!(
   [
@@ -15,11 +16,11 @@ categories = Category.create!(
 
 tests = Test.create!(
   [
-    { title: "Ruby on Rails", level: 1, category: categories[1], author: users[2] },
+    { title: "Ruby on Rails", level: 1, category: categories[1], author: users[0] },
     { title: "School math", level: 2, category: categories[0], author: users[0] },
     { title: "Music", level: 0, category: categories[2], author: users[0] },
-    { title: "Art", level: 5, category: categories[2], author: users[1] },
-    { title: "HTML", level: 3, category: categories[1], author: users[1] }
+    { title: "Art", level: 5, category: categories[2], author: users[0] },
+    { title: "HTML", level: 3, category: categories[1], author: users[0] }
   ]
 )
 
@@ -62,10 +63,10 @@ answers = Answer.create!(
 
 badges = Badge.create!(
   [
-    { name: "Smarty Pants", description: "You've passed 5 tests!", key: "5_tests_passed", image_url: "https://ecdn.teacherspayteachers.com/thumbitem/Smarty-Pants-Printable-2545420-1500876149/original-2545420-1.jpg" }, 
-    { name: "Unstoppable unicorne", description: "You've passed 10 tests!", key: "10_tests_passed", image_url: "https://www.nicepng.com/png/full/210-2108253_unstable-unicorns-basic-unicorn-loves-rules-unstable-unicorns.png" },
-    { name: "The Best Programmer Ever", description: "All Programming tests are passed!", key: "programming", image_url: "https://ahmadnaser.com/wp-content/uploads/2013/10/programmer_creattica_full.jpg" }, 
-    { name: "Nuts", description: "All tests with the level 0 are passed!", key: "0_level", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2F1579042112%2FHealthiest%20Nuts.jpg" },
-    { name: "Crazy!", description: "You've passed the test at 1st attempt!", key: "at_1_attempt", image_url: "https://i.discogs.com/F6qKrbKhxapDVOxSpHvyKJ-4oY_ymW1YFkLh9sM_Rvc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMxNjI5/Ny0xNjMzMjc2MzE4/LTM2NzQuanBlZw.jpeg" }
+    { name: "Smarty Pants", description: "You've passed all Art tests!", rule_type: "categories", rule_value: "Art", image_url: "https://ecdn.teacherspayteachers.com/thumbitem/Smarty-Pants-Printable-2545420-1500876149/original-2545420-1.jpg" }, 
+    { name: "Unstoppable unicorne", description: "You've passed all School tests!", rule_type: "categories", rule_value: "School", image_url: "https://www.nicepng.com/png/full/210-2108253_unstable-unicorns-basic-unicorn-loves-rules-unstable-unicorns.png" },
+    { name: "The Best Programmer Ever", description: "All Programming tests are passed!", rule_type: "categories", rule_value: "Programming", image_url: "https://ahmadnaser.com/wp-content/uploads/2013/10/programmer_creattica_full.jpg" }, 
+    { name: "Nuts", description: "All tests with the level 0 are passed!", rule_type: "level", rule_value: "0", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2F1579042112%2FHealthiest%20Nuts.jpg" },
+    { name: "Crazy!", description: "You've passed the test at 1st attempt!", rule_type: "attempts", rule_value: "1", image_url: "https://i.discogs.com/F6qKrbKhxapDVOxSpHvyKJ-4oY_ymW1YFkLh9sM_Rvc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTMxNjI5/Ny0xNjMzMjc2MzE4/LTM2NzQuanBlZw.jpeg" }
   ]
   )

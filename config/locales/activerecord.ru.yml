@@ -49,5 +49,6 @@ ru:
       badge:
         name: "Название"
         description: "Описание"
-        key: "Ключ"
+        rule_type: "Условие"
+        rule_value: "Значение условия"
         image_url: "URL изображения"
