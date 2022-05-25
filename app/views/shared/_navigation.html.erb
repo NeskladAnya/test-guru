@@ -5,8 +5,12 @@
       <% if user_signed_in? %>
         <% if current_user.type == "Admin" %>
           <%= link_to 'Gists', admin_gists_path %>
+          <%= link_to t('.badges'), admin_badges_path %>
           <%= link_to t('.admin'), admin_tests_path %>
+        <% else %>
+          <%= link_to t('.badges'), badges_path %>
         <% end %>
+        <%= link_to t('.tests'), tests_path %>
         <%= t('.welcome', first_name: current_user.first_name) %>! || 
         <%= link_to t('.log_out'), destroy_user_session_path, method: :delete %>
     </div>

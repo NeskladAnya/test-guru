@@ -19,6 +19,8 @@ en:
         header: "All tests"
         title: "Title"
         question_count: "Number of questions"
+        category: "Category"
+        level: "Level"
         actions: "Actions"
         new_test_link: "New test"
       show:
@@ -52,6 +54,21 @@ en:
         question: "Question"
         url: "URL"
         author: "Author"
+    badges:
+      index:
+        header: "All badges"
+        id: "ID"
+        name: "Name"
+        description: "Description"
+        rule_type: "Rule"
+        rule_value: "Rule value" 
+        image: "Image"
+        actions: "Actions"
+        new_badge_link: "Create a new badge"
+      edit:
+        header: "Edit the badge"
+      new:
+        header: "Create a new badge"
 
   tests:
     index:
@@ -85,6 +102,14 @@ en:
     create:
       alert: "Please leave the feedback"
       notice: "Thank you for the feedback!"
+
+  badges:
+    index:
+      header: "All badges"
+      name: "Name"
+      description: "Description"
+      image: "Image"
+      achieved: "Achieved"
     
   shared:
     footer:
@@ -98,6 +123,8 @@ en:
       sign_up: "Sign up"
       admin: "Admin"
       welcome: "Welcome, %{first_name}"
+      badges: "Bages"
+      tests: "Tests"
   
   helpers:
     submit:

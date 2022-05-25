@@ -19,6 +19,8 @@ ru:
         header: "Все тесты"
         title: "Название"
         question_count: "Количество вопросов"
+        category: "Категория"
+        level: "Уровень"
         actions: "Действия"
         new_test_link: "Создать новый тест"
       show:
@@ -52,6 +54,21 @@ ru:
         question: "Вопрос"
         url: "URL"
         author: "Автор"
+    badges:
+      index:
+        header: "Все бейджи"
+        id: "ID"
+        name: "Название"
+        description: "Описание"
+        rule_type: "Условие"
+        rule_value: "Значение условия"
+        image: "Изображение"
+        actions: "Действия"
+        new_badge_link: "Создать новый бейдж"
+      edit:
+        header: "Редактировать бейдж"
+      new:
+        header: "Создать бейдж"
 
   tests:
     index:
@@ -75,7 +92,6 @@ ru:
     create:
       notice: "Просмотреть созданный Gist"
       
-  
   sessions:
     create:
       notice: "Привет, %{name}!"
@@ -86,6 +102,14 @@ ru:
     create:
       alert: "Пожалуйста, оставьте сообщение"
       notice: "Спасибо за отзыв!"
+
+  badges:
+    index:
+      header: "Все бейджи"
+      name: "Название"
+      description: "Описание"
+      image: "Изображение"
+      achieved: "Получен"
 
   shared:
     footer:
@@ -99,6 +123,8 @@ ru:
       sign_up: "Регистрация"
       admin: "Админ"
       welcome: "Привет, %{first_name}"
+      badges: "Бейджи"
+      tests: "Тесты"
 
   helpers:
     submit:
