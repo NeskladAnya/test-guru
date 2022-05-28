@@ -7,11 +7,19 @@
   %>
 </p>
 
-<%= content_tag :div, class: "progress",
-                      data: { question_number: @test_passage.current_question_number,
-                              question_count: @test_passage.test.questions.count } do %>
-  <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<% if @test_passage.deadline.present? %>
+  <%= content_tag :div, class: "row justify-content-center border rounded-pill timer hide",
+                        data: { deadline: @test_passage.deadline.utc.to_time.iso8601 } do %>
+  <% end %>
 <% end %>
+
+<p>
+  <%= content_tag :div, class: "progress",
+                        data: { question_number: @test_passage.current_question_number,
+                                question_count: @test_passage.test.questions.count } do %>
+    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  <% end %>
+</p>
 
 <b><%= @test_passage.current_question.body %></b>
 
