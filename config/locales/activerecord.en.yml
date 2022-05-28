@@ -15,6 +15,7 @@ en:
         category: "Category"
         created_at: "Creation date"
         updated_at: "Update date"
+        time_in_min: "Minutes required"
     
       category:
         title: "Title"
