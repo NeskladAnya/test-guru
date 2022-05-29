@@ -16,6 +16,7 @@ ru:
         category: "Категория"
         created_at: "Дата создания"
         updated_at: "Дата редактирования"
+        time_in_min: "Время прохождения (мин)"
       
       category:
         title: "Название"

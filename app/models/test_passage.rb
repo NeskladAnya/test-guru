@@ -4,18 +4,16 @@ class TestPassage < ApplicationRecord
   belongs_to :current_question, class_name: 'Question', optional: true
 
   before_validation :set_current_question
+  before_create :set_deadline
 
   SUCCESS_RATIO = 85
 
   def completed?
-    current_question.nil?
+    deadline.nil? ? current_question.nil? : current_question.nil? || deadline.past?
   end
 
   def accept!(answer_ids)
-    if correct_answer?(answer_ids)
-      self.correct_questions += 1
-    end
-
+    self.correct_questions += 1 if !completed? && correct_answer?(answer_ids)
     save!
   end
 
@@ -59,5 +57,9 @@ class TestPassage < ApplicationRecord
 
   def correct_answers
     current_question.answers.correct_answers
+  end
+
+  def set_deadline
+    self.deadline = Time.now.advance(minutes: test.time_in_min) if test.time_in_min.present? 
   end
 end
